@@ -61,6 +61,8 @@ Shader "Custom/Fundamentals/Unlit/BaseColor"
 					Varyings OUT;
 
 					OUT.positionHCS = TransformObjectToHClip(IN.positionOS.xyz);
+					OUT.uv = IN.uv;
+					
 					return OUT;
 			}
 
